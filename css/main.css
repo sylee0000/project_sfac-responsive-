@@ -3,7 +3,6 @@ li{list-style: none;}
 a{color: black; text-decoration: none;}
 img{cursor: pointer;}
 
-
 html{font-size: 14px;}
 body{font-family: 'Noto Sans KR', sans-serif;}
 @media all and (min-width:601px) and (max-width:1023px){
@@ -1739,14 +1738,14 @@ hr{
   box-shadow: 1px 1px 1px 3px #eee;
 }
 
-.newart_market .hover_change01:hover{
-  border: 2px solid skyblue;
-  box-sizing: border-box;
+.newart_market .hover_change01:hover .newart_box_title{
+  background-color: skyblue;
+  border-radius: 10px 10px 0 0;
 }
 
-.newart_market .hover_change02:hover{
-  border: 2px solid salmon;
-  box-sizing: border-box;
+.newart_market .hover_change02:hover .newart_box_title{
+  background-color: salmon;
+  border-radius: 10px 10px 0 0;
 }
 
 .newart_market .newart_box:nth-child(3){
@@ -1942,9 +1941,14 @@ hr{
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  .online_gallery .gallery_txt .gallery_txt_inner{
+    width: 260px; height: 260px;
+    margin: 20px 0 0 20px;
+  }
 }
 
-/*-----contents07:온라인갤러리_미디어쿼리(모바일,태블릿)-----*/
+/*-----contents07:온라인갤러리_미디어쿼리(태블릿)-----*/
 
 @media all and (min-width:601px) and (max-width:1023px){
 
@@ -1963,9 +1967,6 @@ hr{
     margin: 60px 20px;
   }
   
-  .online_gallery .gallery_txt .gallery_txt_inner p{
-    margin-bottom: 15%;
-  }
 }
 
 /*-----contents07:온라인갤러리_미디어쿼리(웹)-----*/
@@ -1974,17 +1975,21 @@ hr{
 
   .online_gallery .gallery_txt{
     max-width: 1350px;
-    margin: 0 auto;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 290px;
   }
 
   .online_gallery .gallery_txt .gallery_txt_inner{
-    width: 300px; height: 400px;
-    margin: 0;
+    width: 300px;
+    height: 400px;
     background-color: white;
     opacity: 0.8;
-    position: absolute;
-    bottom: 0; right: 0;
+    margin-left: 1024px;
+  }
+
+  .online_gallery .gallery_txt .gallery_txt_inner .gallery_txt_inner_web{
+    padding: 60px 20px;
   }
 } 
 
