@@ -1098,7 +1098,6 @@ hr{
 .artist_bg .artist_box .business_framebox .business_frame li,
 .artist_bg .artist_box .carrier_framebox .carrier_frame li{
   width: 50vw;
-  background-color: white;
 }
 
 .artist_bg .artist_box .business_framebox .business_frame li:last-child,
@@ -1108,7 +1107,7 @@ hr{
 
 .artist_bg .artist_box .business_framebox .business_frame li img,
 .artist_bg .artist_box .carrier_framebox .carrier_frame li img{
-  width: 50vw; height: 222.25px;
+  max-width: 100%; height: 270px;
   margin-bottom: 10px;
 }
 
@@ -1231,7 +1230,7 @@ hr{
 
   .artist_bg .artist_box .business_framebox .business_frame li,
   .artist_bg .artist_box .carrier_framebox .carrier_frame li{
-    width: 30vw; 
+    width: 192px;
   }
 
   .artist_bg .artist_box .business_framebox .business_frame li:last-child,
@@ -1241,7 +1240,8 @@ hr{
 
   .artist_bg .artist_box .business_framebox .business_frame li img,
   .artist_bg .artist_box .carrier_framebox .carrier_frame li img{
-    width: 30vw; height: 222.25px;
+    width: 100%;
+    height: 270px;
   }
 }
 
@@ -1266,8 +1266,11 @@ hr{
     margin-bottom: 20px;
   }
 
+  .artist_bg_web .artist_box_web .swiper-slide img,
   .artist_bg_web .carrier_box_web .swiper-slide img{
-    width: 300px; height: 400px;
+    width: 100%;
+    height: 270px;
+    margin: 0;
   }
 
   .artist_bg_web .artist_box_web .artist_main_title .btn_artist_more_web,
